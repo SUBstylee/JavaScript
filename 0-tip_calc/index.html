@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    
+    <div class="container text-center col-lg-4">
+        <form id="mainForm">
+         <h1>Tip Calculator</h1>
+         
+          <div class="form-group col-lg-8"><!-- amount of bill -->
+            <label for="price">Price of Meal</label>
+            <input type="text" class="form-control form-control-lg" id="price" placeholder="$$$" required>
+          </div><!-- amount of bill -->
+          
+          <div class="form-group col-lg-8"><!-- num of people -->
+            <label for="people">Number of People</label>
+            <input type="text" class="form-control form-control-lg" id="people" placeholder="Size of Party">
+          </div><!-- num of people -->
+          
+          <div class="form-group col-lg-8"><!-- select -->
+            <label class="my-1 mr-2" for="quality">Quality of Service</label>
+            <select class="custom-select my-1 mr-sm-2 form-control-lg" id="quality" required>
+              <option disabled selected value="0">How was your experience?</option>
+              
+              <option value="0.2">Excellent (20%)</option>
+              <option value="0.15">Great (15%)</option>
+              <option value="0.1">OK (10%)</option>
+              <option value="0.05">Adequete or Worse (5%)</option>
+            </select>
+          </div><!-- select -->
+          
+          <button type="button" class="btn btn-danger" id="calculate">Calculate</button>
+          
+          <div id="totalTip">
+              <sup>$</sup>
+              <span id="tip">0.00</span>
+              <small id="each">each</small>
+          </div>
+        </form>
+    </div><!-- .container -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
