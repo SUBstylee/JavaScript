@@ -1,0 +1,17 @@
+body{
+    margin: auto;
+    padding: 0;
+    background: #ccc;
+    background-image: url(hands.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+#container{
+    width: 490px;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    padding: 40px 5px;
+    background: #eee;
+    border-radius: 10px;
+}
