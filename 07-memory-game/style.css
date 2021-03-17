@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url("img/greenfelt.jpg");
+}
+
+h1{
+  
+  padding: 20px 0 0;
+  margin: 15px auto 0;
+  border-radius: 10px 10px 0 0;
+}
+h3{
+  display: inline-block;
+  margin: 0 20px;
+}
+button{
+  padding: 5px;
+  margin: 10px;
+  font-size: 1rem;
+  color: #eee;
+  background: #111;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+button:active{
+  background: #000;
+}
+p{
+ padding: 10px 0;
+}
+h1, p, .keeper, .controls{
+  text-align: center;
+  color: #eee;
+  background: #323232;
+  width: 80%;
+  max-width: 800px;
+}
+p, .keeper{
+  margin: 0 auto;
+}
+.controls{
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto 15px;
+}
+
+.container{
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#game div {
+  border: 4px double #eee;
+  border-radius: 10px;
+  width: 23%;
+  height: 180px;
+  margin: .5%;
+  display: inline-block;
+}
+
+.red{
+  background: red url('img/rabbit.png') no-repeat center center;
+  background-size:  contain;
+}
+.blue{
+  background: blue url('img/bear.png') no-repeat center center;
+  background-size:  contain;
+}
+.green{
+  background: green url('img/camel.png') no-repeat center center;
+  background-size:  contain;
+}
+.orange{
+  background: orange url('img/bird.png') no-repeat center center;
+  background-size:  contain;
+}
+.purple{
+  background: purple url('img/cat.png') no-repeat center center;
+  background-size:  contain;
+}
+.brown{
+  background: brown url('img/fox.png') no-repeat center center;
+  background-size:  contain;
+}
+.pink{
+  background: pink url('img/dog.png') no-repeat center center;
+  background-size:  contain;
+}
+.white{
+  background: white url('img/lion.png') no-repeat center center;
+  background-size:  contain;
+}
+.gray{
+  background: gray url('img/chicken.png') no-repeat center center;
+  background-size:  contain;
+}
+.black{
+  background: black url('img/deer.png') no-repeat center center;
+  background-size:  contain;
+}
+.facedown{
+  background: white url('img/questionmark.png') no-repeat center center;
+  background-size: contain;
+}
+
+#game div.match{
+  border: 4px double #333;
+}
+
+/* media q */
+@media (max-width: 1050px){
+  #game div {
+    height: 150px;
+    margin: .25%;
+  }
+}
+@media (max-width: 680px){
+  #game div {
+    height: 120px;
+    width: 22.75%;
+  }
+}
+@media (max-width: 590px){
+  #game div {
+    height: 100px;
+    width: 22.2%;
+  }
+}
