@@ -70,8 +70,9 @@ function createDivsForColors(colorArray) {
     newDiv.setAttribute('color', color);
   }
 }
-
+//
 //start
+//
 let card1 = '';
 let card2 = '';
 let score = 0;
@@ -110,10 +111,8 @@ function handleCardClick(event) {
   score++;
   scoreDisplay.innerText = score;
 
-  if ((event.target.getAttribute('status') !== 'match') && (card2 === '')) {
+  if ((event.target.getAttribute('condition') !== 'match') && (card2 === '')) {
     event.target.classList.toggle('facedown')
-
-
     if (!card1) {
       card1 = event.target;
     }
@@ -122,20 +121,19 @@ function handleCardClick(event) {
       if (card1.getAttribute('color') === card2.getAttribute('color') && (card1 !== card2)) {
         card1.classList.add('match');
         card2.classList.add('match');
-        card1.setAttribute('status', 'match');
-        card2.setAttribute('status', 'match');
+        card1.setAttribute('condition', 'match');
+        card2.setAttribute('condition', 'match');
         card1 = '';
         card2 = '';
         tracker++;
       }
-      else if (card1.getAttribute('status') !== 'match') {
+      else if (card1.getAttribute('condition') !== 'match') {
         setTimeout(function () {
           card1.classList.toggle('facedown');
           card2.classList.toggle('facedown');
           card1 = '';
           card2 = '';
         }, 1000)
-
       }
     }
     else {
@@ -155,6 +153,5 @@ function handleCardClick(event) {
     }, 500);
   }//alerts a win, updates bestscore if better than current, resets tracker
 }
-
 // when the DOM loads
 createDivsForColors(shuffledColors);
