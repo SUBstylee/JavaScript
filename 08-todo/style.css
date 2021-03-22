@@ -1,0 +1,86 @@
+body{
+    background: url('https://images.unsplash.com/photo-1522199670076-2852f80289c3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2104&q=80') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #355c7d;
+    padding: 0 20px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+h1{
+    margin: 50px 0;
+    padding: 30px 0 0;
+}
+
+h1, label, checked{
+    color: #ccc;
+}
+
+h1, form, ul{
+    text-align: center;
+}
+
+form{
+    font-size: 1.3rem;
+}
+
+input{
+    padding: 3px 5px 2px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+ul{
+    display: inline-block;
+    text-align: center;
+    width: 95%;
+}
+
+li{
+    margin: 15px auto;
+    padding: 8px 8px 12px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 90%;
+    background-color: #eee;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.6);
+    transition: all 500ms;
+    font-size: 1.3rem;
+}
+
+li, button{
+    border-radius: 5px;
+}
+
+li, span button{
+    background-color: #f8b195;
+}
+
+.note{
+    width: 88%
+}
+.liBtns{
+    height: 25px;
+    margin: auto 0;
+}
+.checked{
+    transition: all 500ms;
+    text-decoration: line-through;
+    box-shadow: none;
+    color: #aaa;
+}
+
+.checked, .checked span button{
+    background-color: rgba(75, 30, 30, .60);
+}
+
+button:focus, input:focus{
+    outline: none;
+}
