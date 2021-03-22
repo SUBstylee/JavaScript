@@ -1,2 +1,2 @@
 # JavaScript
-Some projects while I learn JavaScript
+Some projects while I learn JavaScript.
