@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\..\\Files\\Working\\dev"
+		},
+		{
+			"path": "C:\\Users\\jjthr\\Exercism\\javascript"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Files\\Working\\wd"
+		},
+		{
+			"path": "..\\..\\..\\.."
+		},
+		{
+			"path": "c:\\Users\\jjthr\\git"
+		},
+		{
+			"path": "F:\\springboardExercises"
+		},
+		{
+			"path": "F:\\gitHub"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "gitHub",
+		"python.pythonPath": "C:\\Users\\jjthr\\AppData\\Local\\Programs\\Python\\Python37\\python.exe"
+	}
+}
